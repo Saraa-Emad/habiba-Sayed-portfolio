@@ -397,40 +397,89 @@ color: #000;
 font-size: 1.5em;
 }
 footer {
-background-color: #f9f9f9;
-padding: 40px 20px;
-text-align: center;
-border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
 }
 
 footer p {
-font-size: 16px;
-color: #242323;
+    font-size: 16px;
+    color: #242323;
 }
+
 .footer h2 {
-font-size: 1.5em;
-color: #0e0e27;
+    font-size: 1.5em;
+    color: #0e0e27;
 }
+
 span {
-color: #ac6293; /* اللون البنفسجي اللي مستخدماه */
-font-weight: bold;
+    color: #ac6293; 
+    font-weight: bold;
 }
+
+/* تنسيق اللينكات العادي (أيقونات حبيبة واسمك) */
 footer a {
-text-decoration: none;
-color: #e045d3; /* استخدمت نفس اللون الموف اللي في الهيدر بتاعك */
-font-weight: bold;
-transition: 0.3s;
+    text-decoration: none;
+    color: #e045d3;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 footer a:hover {
-color: #300c92; /* اللون يتغير لما يقفوا بالماوس على اسمك */
-text-decoration: underline;
-}
-/* السطر ده يتحط فوق خالص بره الميديا كويري */
-.menu-icon {
-display: none; 
+    color: #300c92;
+    text-decoration: underline;
 }
 
+/* --- جزء الـ Tooltip لاسم سارة فقط --- */
+
+.sara-link {
+    position: relative;
+    display: inline-block;
+}
+
+.sara-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #300c92; /* نفس لون الـ hover بتاعك */
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    text-decoration: none !important; /* عشان الخط ميظهرش تحت الكلام اللي في الفقاعة */
+}
+
+.sara-link::before {
+    content: "";
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #300c92;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.sara-link:hover::after, 
+.sara-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.menu-icon {
+    display: none; 
+}
 .certifications {
 background-color: #f3ebf2; /* درجة بنفسجي فاتح جداً متناسقة مع D9C1D7 */
 padding: 80px 10%;
@@ -473,6 +522,25 @@ object-fit: cover;
 .swiper-pagination-bullet-active {
 background: #ac6293 !important;
 }
+
+
+.myTestimonialsSwiper {
+    width: 100%;
+    max-width: 400px; /* حجم مناسب لصور ريفيوهات الموبايل */
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.myTestimonialsSwiper .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #ac6293; /* برواز رقيق بلون البراند */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
 
 /* copywriting*/
 /* تنسيق سكشن الإعلانات الرئيسي */
