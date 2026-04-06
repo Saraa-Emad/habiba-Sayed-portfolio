@@ -71,8 +71,8 @@ background-attachment: fixed;
 }
 
 .main-content {
-background: rgba(255, 255, 255, 0.1); /* شفافية خفيفة */
- backdrop-filter: blur(8px); /* تأثير التغبيش */
+background: rgba(255, 255, 255, 0.1); 
+ backdrop-filter: blur(8px); 
 padding: 40px 30px;
 border-radius: 20px;
 }
@@ -251,7 +251,7 @@ margin-bottom: 30px;
 
 /* projects*/
 
-/* تنسيق شبكة المشاريع */
+
 .projects-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -272,7 +272,7 @@ flex-direction: column;
 
 .project-card:hover {
 transform: translateY(-12px);
- box-shadow: 0 15px 35px rgba(233, 30, 99, 0.1); /* ظل روز خفيف */
+ box-shadow: 0 15px 35px rgba(233, 30, 99, 0.1); 
 border-color: #e91e63;
 }
 
@@ -312,36 +312,34 @@ font-weight: bold;
 font-size: 0.95rem;
 }
 
-/* ألوان حبيبة */
-/* تنسيق صفحة المشروع */
+
 .project-details-page {
-background-color: #fff0f3; /* اللون الروز الهادي جداً للخلفية */
+background-color: #fff0f3; 
 font-family: 'Cairo', sans-serif;
 }
 
 .page-main-title {
 text-align: center;
-color: #1a2a44; /* كحلي */
+color: #1a2a44; 
 margin: 60px 0;
 }
 
-/* تصميم الورقة المنبثقة */
+
 .content-paper {
-background-color: #fce4ec; /* روز الورقة */
-border: 3px solid #1a2a44; /* أطراف كحلية محددة */
-padding: 30px;
+background-color: #fce4ec; 
+border: 3px solid #1a2a44; 
 margin: 30px auto;
 max-width: 800px;
 position: relative;
-box-shadow: 10px 10px 0px #1a2a44; /* ظل كحلي صلب */
+box-shadow: 10px 10px 0px #1a2a44;
 transition: all 0.4s ease-in-out;
 cursor: pointer;
 }
 
-/* تأثير الهوفر المنبثق */
+
 .content-paper:hover {
-transform: translateY(-15px) scale(1.03); /* حركة منبثقة للأعلى */
- box-shadow: 20px 20px 0px #e91e63; /* الظل يقلب بينك عند الوقوف */
+transform: translateY(-15px) scale(1.03); 
+box-shadow: 20px 20px 0px #e91e63; 
 }
 
 .content-paper h3 {
@@ -364,7 +362,7 @@ font-style: italic;
 color: #1a2a44;
 }
 
-/* زرار التحميل الكحلي */
+
 .final-pdf-btn {
 display: block;
 width: fit-content;
@@ -383,7 +381,7 @@ background: #e91e63;
 }
 /* contact */
 .cards-contact .section-title {
-color: #0F3345; /* أو أي لون تحبيه للعنوان */
+color: #0F3345; 
 text-align: center;
 }
 .contact .icon{
@@ -418,7 +416,7 @@ span {
     font-weight: bold;
 }
 
-/* تنسيق اللينكات العادي (أيقونات حبيبة واسمك) */
+
 footer a {
     text-decoration: none;
     color: #e045d3;
@@ -431,7 +429,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* --- جزء الـ Tooltip لاسم سارة فقط --- */
+
 
 .sara-link {
     position: relative;
@@ -444,7 +442,7 @@ footer a:hover {
     bottom: 150%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    background: #300c92; /* نفس لون الـ hover بتاعك */
+    background: #300c92; 
     color: #fff;
     padding: 6px 12px;
     border-radius: 8px;
@@ -454,7 +452,7 @@ footer a:hover {
     visibility: hidden;
     transition: all 0.3s ease;
     font-weight: normal;
-    text-decoration: none !important; /* عشان الخط ميظهرش تحت الكلام اللي في الفقاعة */
+    text-decoration: none !important;
 }
 
 .sara-link::before {
@@ -481,13 +479,13 @@ footer a:hover {
     display: none; 
 }
 .certifications {
-background-color: #f3ebf2; /* درجة بنفسجي فاتح جداً متناسقة مع D9C1D7 */
+background-color: #f3ebf2; 
 padding: 80px 10%;
 text-align: center;
 }
 
 .section-title {
-color: #0F3345; /* نفس لون نصوص الموقع الأساسي */
+color: #0F3345; 
 margin-bottom: 10px;
 }
 
@@ -498,7 +496,7 @@ font-size: 1rem;
 line-height: 1.6;
 }
 
-/* تعديل الكاروسيل نفسه */
+
 .swiper {
 width: 320px;
 height: 400px;
@@ -506,8 +504,8 @@ height: 400px;
 
 .swiper-slide {
 background-color: #fff;
-border: 2px solid #D9C1D7; /* إطار بنفسجي هادي */
-box-shadow: 0 10px 20px rgba(172, 98, 147, 0.1); /* ضل بنفسجي خفيف */
+border: 2px solid #D9C1D7; 
+box-shadow: 0 10px 20px rgba(172, 98, 147, 0.1); 
 border-radius: 20px;
 overflow: hidden;
 }
@@ -518,7 +516,7 @@ height: 100%;
 object-fit: cover;
 }
 
-/* تغيير لون نقط التنقل للون الموف بتاعك */
+
 .swiper-pagination-bullet-active {
 background: #ac6293 !important;
 }
@@ -526,7 +524,7 @@ background: #ac6293 !important;
 
 .myTestimonialsSwiper {
     width: 100%;
-    max-width: 400px; /* حجم مناسب لصور ريفيوهات الموبايل */
+    max-width: 400px; 
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -535,7 +533,7 @@ background: #ac6293 !important;
     width: 100%;
     height: auto;
     border-radius: 12px;
-    border: 2px solid #ac6293; /* برواز رقيق بلون البراند */
+    border: 2px solid #ac6293;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -543,24 +541,20 @@ background: #ac6293 !important;
 
 
 /* copywriting*/
-/* تنسيق سكشن الإعلانات الرئيسي */
-/* =========================================
-1. تنسيق الكارت "البوابة" (في الصفحة الرئيسية)
-   ========================================= */
-/* تنسيق الكارت كقطعة صغيرة ومنظمة */
+
 .ads-gateway {
-background-color: #1a2a44; /* كحلي ثابت */
+background-color: #1a2a44; 
 color: #ffffff !important;
 padding: 30px;
 text-align: center;
 border-radius: 15px;
-max-width: 400px; /* تحديد عرض الكارت ليكون صغيراً */
-margin: 40px auto; /* سنترة الكارت في نص الصفحة */
+max-width: 400px; 
+margin: 40px auto;
 box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 border: none;
 }
 
-/* توضيح العنوان */
+
 .ads-gateway h3 {
 color: #ffffff !important;
 font-size: 1.5rem;
@@ -568,18 +562,18 @@ margin-bottom: 15px;
 display: block;
 }
 
-/* توضيح الكلام المكتوب */
+
 .ads-gateway p {
-color: #f0f0f0 !important; /* لون فاتح جداً ليظهر فوق الكحلي */
+color: #f0f0f0 !important; 
 font-size: 1rem;
 line-height: 1.6;
 margin-bottom: 20px;
 }
 
-/* توضيح اللينك (زرار واضح) */
+
 .ads-gateway .view-btn {
 display: inline-block;
-background-color: #e91e63; /* لون الروز القوي للزرار */
+background-color: #e91e63; 
 color: #ffffff !important;
 padding: 10px 25px;
 border-radius: 25px;
@@ -593,18 +587,15 @@ background-color: #c2185b;
 transform: scale(1.05);
 }
 
-/* التاج الصغير فوق العنوان */
 .ads-gateway .tag {
-    color: #ffc107; /* لون ذهبي أو أصفر ليظهر بوضوح */
+    color: #ffc107;
 font-size: 0.8rem;
 font-weight: bold;
 display: block;
 margin-bottom: 10px;
 }
 
-/* =========================================
-2. تنسيق شبكة الإعلانات (في الصفحة الفرعية)
-   ========================================= */
+
 .ads-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -612,14 +603,12 @@ gap: 30px;
 padding: 40px 0;
 }
 
-/* =========================================
-3. تنسيق كروت الإعلانات الـ 10 (Ad Cards)
-   ========================================= */
+
 .ad-card {
 background: #ffffff;
 border-radius: 15px;
 padding: 30px;
-border-right: 6px solid #1a2a44; /* الخط الكحلي المميز */
+border-right: 6px solid #1a2a44; 
 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 display: flex;
 flex-direction: column;
@@ -630,11 +619,11 @@ min-height: 280px;
 
 .ad-card:hover {
 transform: translateY(-8px);
-border-right-color: #e91e63; /* يقلب روز */
+border-right-color: #e91e63; 
 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* التاج العلوي (Badge) */
+
 .ad-badge {
 background-color: #fce4ec;
 color: #e91e63;
@@ -657,10 +646,10 @@ line-height: 1.4;
 color: #555;
 line-height: 1.8;
 font-size: 0.95rem;
-flex-grow: 1; /* عشان يخلي اللينك دايماً تحت */
+flex-grow: 1;
 }
 
-/* روابط الإعلانات والـ PDF */
+
 .ad-link {
 margin-top: 20px;
 color: #e91e63;
@@ -680,9 +669,7 @@ color: #1a2a44;
 border-bottom-color: #1a2a44;
 }
 
-/* =========================================
-4. ريسبونسيف للموبايل
-   ========================================= */
+
 @media (max-width: 768px) {
 .ads-gateway {
 padding: 30px 20px !important;
@@ -692,32 +679,31 @@ font-size: 1.5rem;
 }
 }
 
-/*زرار العودة *ظاهر في صفحات المشاريع الفرعية*/
-/* تنسيق رابط العودة للمشاريع في الهيدر */
+
 .back-link {
 text-decoration: none;
-color: #1a2a44; /* لون كحلي غامق */
+color: #1a2a44; 
 font-weight: bold;
 font-size: 0.9rem;
 padding: 8px 18px;
 border: 2px solid #1a2a44;
-border-radius: 25px; /* يخليه بيضاوي شيك */
+border-radius: 25px; 
 transition: all 0.3s ease;
 display: inline-flex;
 align-items: center;
 gap: 8px;
 }
 
-/* حركة عند تمرير الماوس (Hover) */
+
 .back-link:hover {
 background-color: #1a2a44;
 color: #ffffff !important;
-transform: translateX(5px); /* حركة خفيفة لليمين */
+transform: translateX(5px); 
 }
 
-/* إضافة سهم صغير قبل الكلمة يعطي شكل أجمل */
+
 .back-link::before {
-content: '→'; /* سهم يشير للعودة */
+content: '→'; 
 font-size: 1.1rem;
 }
 
@@ -725,19 +711,19 @@ font-size: 1.1rem;
 .view-brand-btn {
 display: inline-block;
 margin-top: 15px;
-color: #e91e63; /* لون الروز بتاع حبيبة */
+color: #e91e63; 
 text-decoration: none;
 font-weight: bold;
 transition: 0.3s ease;
 }
 
 .project-card:hover .view-brand-btn {
-transform: translateX(-5px); /* السهم يتحرك لليسار شوية عشان يشجع على الضغط */
-color: #1a2a44; /* يقلب كحلي لما نقف عليه */
+transform: translateX(-5px); 
+color: #1a2a44; 
 }
 @media (max-width: 768px) {
 .projects-grid {
-grid-template-columns: 1fr; /* كارت واحد في الصف على الموبايل */
+grid-template-columns: 1fr; 
 padding: 20px;
 }
 }
@@ -747,7 +733,7 @@ padding: 20px;
 
 @media (max-width: 991px) {
     header {
-        padding: 15px 5%; /* تقليل الحواف في الشاشات المتوسطة */
+        padding: 15px 5%; 
     }
 }
 
@@ -757,14 +743,14 @@ padding: 20px;
     }
 
     .menu-icon {
-        display: block; /* إظهار أيقونة الهامبرجر */
+        display: block; 
         font-size: 1.5em;
         cursor: pointer;
         color: #0F3345;
     }
 
     .navigation {
-        display: none; /* إخفاء القائمة في الوضع الطبيعي */
+        display: none; 
         position: absolute;
         top: 100%;
         left: 0;
@@ -776,64 +762,63 @@ padding: 20px;
         border-top: 1px solid rgba(0,0,0,0.1);
     }
 
-    /* كلاس active اللي الـ JS بيضيفه لما ندوس على المنيو */
+
     .navigation.active {
         display: flex;
     }
 
     nav.navigation a {
-        margin: 15px 0; /* مسافات عمودية بدل الأفقية */
+        margin: 15px 0; 
         display: block;
     }
 }
 
 @media (max-width: 1024px) {
     section {
-        padding: 80px 50px; /* للتابلت */
+        padding: 80px 50px; 
     }
 }
 
 @media (max-width: 768px) {
     section {
-        padding: 60px 20px; /* للموبايل */
+        padding: 60px 20px;
     }
     
     .main {
-        background-attachment: scroll; /* أفضل للموبايل لتقليل اللاج */
+        background-attachment: scroll; 
     }
 
     .main h2 span {
-        font-size: 2em; /* تصغير حجم اسم حبيبة في الموبايل */
+        font-size: 2em; 
     }
 }
 
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* كارت واحد في الصف */
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
 
     .card {
-        width: 100%; /* كروت الخدمات تاخد العرض كامل */
+        width: 100%; 
         margin: 10px 0;
     }
 
     .logos-container {
-        gap: 20px; /* تقليل المسافات بين لوجوهات البراندات */
+        gap: 20px;
     }
 
     .logo-item {
-        width: 110px; /* تصغير حجم الدواير شوية للموبايل */
+        width: 110px; 
         height: 110px;
     }
 }
-/* منع خروج العناصر عن عرض الشاشة */
+
 html, body {
     overflow-x: hidden;
     width: 100%;
 }
 
-/* تنعيم حركة الصور عند الموبايل */
 img {
     max-width: 100%;
     height: auto;
